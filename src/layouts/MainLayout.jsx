@@ -11,8 +11,8 @@ const Content = styled.main`
   min-height: 70vh;
 `;
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function MainLayout({ children }) {
   return (
