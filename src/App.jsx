@@ -1,11 +1,8 @@
 import React from "react";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <div>
-      <p>Click on the Vite and React logos to learn more</p>
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
