@@ -9,7 +9,8 @@ const Container = styled.div`
 `;
 
 const Content = styled.main`
-  padding: 2rem 0;
+  margin-top: 0px;
+  width: 100%;
   min-height: 70vh;
 `;
 

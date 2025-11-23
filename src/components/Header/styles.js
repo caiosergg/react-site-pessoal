@@ -1,22 +1,26 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
 
+const headerBg = "#C8C1B8";
+const headerText = "#1E1E25";
+const headerTextLight = "#6C6E79";
+const headerPrimary = "#0F355A";
+
 export const Container = styled.header`
   width: 100%;
   padding: 1.2rem 2rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid #e6e6e6;
-  background-color: #fff;
+  background-color: ${headerBg};
 
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: static;
+  z-index: 1000;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: none;
+  box-shadow: none;
+  margin: 0;
 `;
 
 export const LogoBox = styled.div`
@@ -28,13 +32,13 @@ export const LogoBox = styled.div`
 export const LogoTitle = styled.h1`
   font-size: 1.25rem;
   font-weight: 700;
-  color: #222;
+  color: ${headerText};
   letter-spacing: -0.3px;
 `;
 
 export const LogoSubtitle = styled.span`
   font-size: 0.85rem;
-  color: #555;
+  color: ${headerTextLight};
 `;
 
 export const Nav = styled.nav`
@@ -43,7 +47,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(RouterLink)`
-  color: #444;
+  color: ${headerText};
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -57,7 +61,7 @@ export const NavLink = styled(RouterLink)`
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #0057ff;
+    background-color: ${headerPrimary};
     transition: width 0.3s ease;
   }
 
@@ -66,7 +70,7 @@ export const NavLink = styled(RouterLink)`
   }
 
   &.active {
-    color: #000;
+    color: ${headerText};
   }
 
   &.active::after {
