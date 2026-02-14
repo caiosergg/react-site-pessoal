@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
 
+import { primary, dark } from "../../layouts/Theme";
+
 export const Container = styled.header`
   width: 100%;
   padding: 1.2rem 2rem;
@@ -8,7 +10,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  background: linear-gradient(90deg, #0f355a, #00aef0);
+  background: linear-gradient(90deg, ${primary}, ${dark});
   color: #fff;
   font-family: "Inter", sans-serif;
   position: relative;
@@ -21,6 +23,7 @@ export const LogoBox = styled.div`
 `;
 
 export const LogoTitle = styled.h1`
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
 `;

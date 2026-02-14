@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Container = styled.div`
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 const Content = styled.main`
-  margin-top: 0px;
-  width: 100%;
-  min-height: 70vh;
+  flex: 1;
 `;
 
 export default function MainLayout({ children }) {
