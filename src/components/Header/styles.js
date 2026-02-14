@@ -1,7 +1,15 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
 
-import { primary, dark } from "../../layouts/Theme";
+import {
+  primary,
+  secondary,
+  tertiary,
+  dark,
+  text,
+  textLight,
+  background,
+} from "../../layouts/Theme";
 
 export const Container = styled.header`
   width: 100%;
@@ -52,7 +60,7 @@ export const NavLink = styled(RouterLink)`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #ffd700;
+    color: ${textLight};
   }
 
   &::after {
@@ -62,7 +70,7 @@ export const NavLink = styled(RouterLink)`
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #ffd700;
+    background-color: ${secondary};
     transition: width 0.3s ease;
   }
 
@@ -109,7 +117,7 @@ export const MobileMenu = styled.nav`
   ${NavLink} {
     color: #fff;
     &:hover {
-      color: #ffd700;
+      color: ${secondary};
     }
   }
 `;
