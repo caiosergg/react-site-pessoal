@@ -1,6 +1,12 @@
 [
   {
-    "title": "Global multiplicity of positive solutions for a sublinear elliptic equation in ℝⁿ",
+    "title": "Liouville theorem for a quasilinear non-uniformly elliptic equation in half-spaces and applications",
+    "journal": "Annali della Scuola Normale Superiore di Pisa — Classe di Scienze",
+    "year": 2025,
+    "status": "accepted"
+  },
+  {
+    "title": "Global multiplicity of positive solutions for a sublinear elliptic equation in ℝᴺ",
     "journal": "Journal of Differential Equations",
     "year": 2025
   },
@@ -11,7 +17,137 @@
   },
   {
     "title": "Lipschitz regularity of solutions to two-phase free boundary problems governed by a non-uniformly elliptic operator",
-    "journal": "Nonlinear Analysis",
+    "journal": "Nonlinear Analysis — Theory, Methods & Applications",
     "year": 2025
+  },
+  {
+    "title": "Multi-bump solutions for a strongly degenerate problem with exponential growth in ℝᴺ",
+    "journal": "The Journal of Geometric Analysis",
+    "year": 2024
+  },
+  {
+    "title": "A quantitative version of the Hopf-Oleinik lemma for a quasilinear non-uniformly elliptic operator",
+    "journal": "Annales Fennici Mathematici",
+    "year": 2024
+  },
+  {
+    "title": "Positive solutions for a class semipositone quasilinear problem with Orlicz-Sobolev critical growth",
+    "journal": "Mathematische Nachrichten",
+    "year": 2023
+  },
+  {
+    "title": "A global result for a degenerate quasilinear eigenvalue problem with discontinuous nonlinearities",
+    "journal": "Calculus of Variations and Partial Differential Equations",
+    "year": 2023
+  },
+  {
+    "title": "A nonsmooth variational approach to semipositone quasilinear problems in ℝᴺ",
+    "journal": "Journal of Mathematical Analysis and Applications",
+    "year": 2023
+  },
+  {
+    "title": "Multiple solutions for a semilinear discontinuous variational problems with lack of compactness",
+    "journal": "Israel Journal of Mathematics",
+    "year": 2022
+  },
+  {
+    "title": "On a class of quasilinear equations involving critical exponential growth and concave terms in ℝᴺ",
+    "journal": "Annales Henri Poincaré",
+    "year": 2022
+  },
+  {
+    "title": "Quasilinear equations involving indefinite nonlinearities and exponential critical growth in ℝᴺ",
+    "journal": "Annali di Matematica Pura ed Applicata",
+    "year": 2021
+  },
+  {
+    "title": "Existence of positive solutions for a class of semipositone problems with Kirchhoff operator",
+    "journal": "Annales Fennici Mathematici",
+    "year": 2021
+  },
+  {
+    "title": "A limiting free boundary problem for a degenerate operator in Orlicz-Sobolev spaces",
+    "journal": "Revista Matemática Iberoamericana",
+    "year": 2020
+  },
+  {
+    "title": "Optimal design problems for a degenerate operator in Orlicz-Sobolev spaces",
+    "journal": "Calculus of Variations and Partial Differential Equations",
+    "year": 2020
+  },
+  {
+    "title": "Existence of positive solutions for a class of semipositone problem in whole ℝᴺ",
+    "journal": "Proceedings of the Royal Society of Edinburgh — Section A",
+    "year": 2020
+  },
+  {
+    "title": "Existence of solution for a partial differential inclusion in ℝᴺ with steep potential well",
+    "journal": "Zeitschrift für Angewandte Mathematik und Physik",
+    "year": 2019
+  },
+  {
+    "title": "Existence of positive solutions for a class of semipositone quasilinear problems through Orlicz-Sobolev space",
+    "journal": "Proceedings of the American Mathematical Society",
+    "year": 2019
+  },
+  {
+    "title": "Multiple solutions for a problem with discontinuous nonlinearity",
+    "journal": "Annali di Matematica Pura ed Applicata",
+    "year": 2018
+  },
+  {
+    "title": "Necessary and sufficient conditions for existence of blow-up solutions for elliptic problems in Orlicz-Sobolev spaces",
+    "journal": "Mathematische Nachrichten",
+    "year": 2018
+  },
+  {
+    "title": "Existence of least energy nodal solution with two nodal domains for a generalized Kirchhoff problem in an Orlicz-Sobolev space",
+    "journal": "Mathematische Nachrichten",
+    "year": 2017
+  },
+  {
+    "title": "Multiple solutions for an inclusion quasilinear problem with nonhomogeneous boundary condition through Orlicz-Sobolev spaces",
+    "journal": "Communications in Contemporary Mathematics",
+    "year": 2017
+  },
+  {
+    "title": "Multivalued elliptic equation with exponential critical growth in ℝ²",
+    "journal": "Journal of Differential Equations",
+    "year": 2016
+  },
+  {
+    "title": "On a nonlocal multivalued problem in an Orlicz-Sobolev space via Krasnoselskii's genus",
+    "journal": "Journal of Convex Analysis",
+    "year": 2015
+  },
+  {
+    "title": "Radial solutions of quasilinear equations in Orlicz-Sobolev type spaces",
+    "journal": "Journal of Mathematical Analysis and Applications",
+    "year": 2015
+  },
+  {
+    "title": "Strauss- and Lions-type results for a class of Orlicz-Sobolev spaces and applications",
+    "journal": "Topological Methods in Nonlinear Analysis",
+    "year": 2014
+  },
+  {
+    "title": "Strongly nonlinear multivalued elliptic equations on a bounded domain",
+    "journal": "Journal of Global Optimization",
+    "year": 2014
+  },
+  {
+    "title": "On a Φ-Kirchhoff multivalued problem with critical growth in an Orlicz-Sobolev space",
+    "journal": "Asymptotic Analysis",
+    "year": 2014
+  },
+  {
+    "title": "Multiplicity of solutions for quasilinear equations involving critical Orlicz-Sobolev nonlinear terms",
+    "journal": "Electronic Journal of Differential Equations",
+    "year": 2013
+  },
+  {
+    "title": "On multiple solutions for multivalued elliptic equations under Navier boundary conditions",
+    "journal": "Journal of Convex Analysis",
+    "year": 2011
   }
 ]

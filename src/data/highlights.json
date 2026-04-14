@@ -1,11 +1,12 @@
 [
   {
-    "value": "+40",
+    "value": "30",
     "label": "Artigos Publicados",
     "details": [
-      "Artigos em periódicos nacionais e internacionais",
-      "Atuação em equações diferenciais parciais não lineares",
-      "Produção científica contínua desde 2009"
+      "29 artigos em periódicos internacionais indexados (2011–2025)",
+      "1 artigo aceito para publicação em 2025",
+      "Periódicos de destaque: JDE, Calc. Var., Rev. Mat. Iberoamericana, Ann. Henri Poincaré",
+      "Produção científica contínua desde 2011"
     ]
   },
   {
@@ -13,44 +14,51 @@
     "label": "Pesquisador CNPq",
     "details": [
       "Bolsista de Produtividade em Pesquisa nível 1D",
-      "Área: Matemática / Análise",
-      "Reconhecimento nacional pelo impacto da produção científica"
+      "Grant CNPq 304774/2022-7",
+      "Área: Matemática / Análise — Equações Diferenciais Parciais",
+      "Uma das mais altas distinções para pesquisadores ativos no Brasil"
     ]
   },
   {
-    "value": "16+",
-    "label": "Anos de Docência",
-    "details": [
-      "Professor na UFCG desde 2009",
-      "Atuação na graduação e pós-graduação",
-      "Atividade docente contínua"
-    ]
-  },
-  {
-    "value": "150+",
+    "value": "156",
     "label": "Citações",
     "details": [
-      "156 citações em 2022 segundo Lattes",
-      "Crescimento contínuo",
-      "Pesquisas amplamente referenciadas na área"
+      "156 citações registradas na Plataforma Lattes (2022)",
+      "Pesquisas referenciadas em periódicos internacionais de alto impacto",
+      "Crescimento contínuo da produção científica"
+    ]
+  },
+  {
+    "value": "13",
+    "label": "Revisor de Periódicos",
+    "details": [
+      "SIAM Journal on Mathematical Analysis",
+      "Journal of Differential Equations",
+      "Calculus of Variations and Partial Differential Equations",
+      "Journal of Mathematical Physics",
+      "Mathematical Methods in the Applied Sciences",
+      "Collectanea Mathematica, Boundary Value Problems, entre outros"
+    ]
+  },
+  {
+    "value": "9",
+    "label": "Orientações Concluídas",
+    "details": [
+      "1 doutorado concluído (Pedro Fellype da Silva Pontes, 2023)",
+      "8 dissertações de mestrado orientadas (2013–2025)",
+      "1 doutorado em andamento (desde 2023)",
+      "1 supervisão de pós-doutorado em andamento (desde 2024)",
+      "15 iniciações científicas supervisionadas"
     ]
   },
   {
     "value": "3",
-    "label": "Projetos Coordenados",
+    "label": "Projetos de Pesquisa",
     "details": [
-      "Projeto atual: Problemas de Fronteira Livre em EDPs",
-      "Dois projetos concluídos (2011–2023)",
-      "Financiamento CNPq"
-    ]
-  },
-  {
-    "value": "3",
-    "label": "Cargos Administrativos",
-    "details": [
-      "Coordenador Administrativo (2014–2016)",
-      "Coordenador da Licenciatura Noturna (2012–2013)",
-      "Coordenador de Pesquisa e Extensão (2012–2013)"
+      "Projeto atual: Problemas de Fronteira Livre em Equações Quase-lineares Elípticas (CNPq, 2023–)",
+      "Equações Quaselineares sobre Espaços de Orlicz-Sobolev (2011–2023, concluído)",
+      "Equações Quaselineares Multivalentes (2011–2023, concluído)",
+      "Pesquisador Visitante na USP São Carlos em 2019 (FAPESP Grant 2018/11664-0)"
     ]
   }
 ]

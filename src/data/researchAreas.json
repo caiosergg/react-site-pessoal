@@ -1,7 +1,10 @@
 [
   { "label": "Problemas com fronteira livre" },
-  { "label": "Equações diferenciais elípticas" },
+  { "label": "Equações quase-lineares elípticas" },
   { "label": "Espaços de Orlicz–Sobolev" },
   { "label": "Métodos variacionais" },
-  { "label": "Análise não linear" }
+  { "label": "Análise não linear" },
+  { "label": "Funcionais não suaves" },
+  { "label": "Equações com crescimento crítico" },
+  { "label": "Problemas semipositone" }
 ]

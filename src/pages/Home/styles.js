@@ -347,6 +347,35 @@ export const ViewAllLink = styled(Link)`
   }
 `;
 
+
+// ── PUB FILTERS ──────────────────────────────────────────────────────
+export const PubFilters = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+`;
+
+export const PubFilterBtn = styled.button`
+  padding: 0.4rem 1.1rem;
+  border-radius: 99px;
+  border: 1.5px solid ${(p) => (p.$active ? primary : secondary + "60")};
+  background: ${(p) => (p.$active ? primary : "transparent")};
+  color: ${(p) => (p.$active ? "#fff" : dark)};
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  letter-spacing: 0.3px;
+
+  &:hover {
+    border-color: ${primary};
+    background: ${primary};
+    color: #fff;
+    transform: none;
+  }
+`;
 // ── CONTACT ───────────────────────────────────────────────────────────
 export const ContactWrapper = styled.div`
   display: flex;

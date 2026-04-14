@@ -23,15 +23,16 @@ export default function HeroSection() {
         <Divider />
         <Bio>
           Professor Associado III da Universidade Federal de Campina Grande
-          (UFCG) e pesquisador nível 1D do CNPq. Atuo em Análise, com foco em
-          problemas com fronteira livre, equações quase-lineares, espaços de
-          Orlicz–Sobolev e métodos variacionais. Minha pesquisa concentra-se em
-          questões estruturais e qualitativas envolvendo equações diferenciais
-          parciais não lineares.
+          (UFCG), doutor em Matemática pela Universidade de Brasília (2011) e
+          pesquisador nível 1D do CNPq. Realizou estágios de pós-doutorado no
+          IMPA e na USP. Atuo em Análise não linear, com foco em problemas com
+          fronteira livre, equações quase-lineares, espaços de Orlicz–Sobolev e
+          métodos variacionais. Coordenador do Doutorado Associado UFCG/UFPB.
         </Bio>
         <BioEn>
-          Associate Professor at UFCG and Level 1D CNPq Research Fellow. My work
-          focuses on Analysis, with emphasis on free boundary problems,
+          Associate Professor at UFCG and Level 1D CNPq Research Fellow (Grant
+          304774/2022-7). PhD from University of Brasília (2011). Postdoctoral
+          research at IMPA and USP. Research focuses on free boundary problems,
           quasilinear equations, Orlicz–Sobolev spaces, and variational methods.
         </BioEn>
         <Buttons>
