@@ -347,7 +347,6 @@ export const ViewAllLink = styled(Link)`
   }
 `;
 
-
 // ── PUB FILTERS ──────────────────────────────────────────────────────
 export const PubFilters = styled.div`
   display: flex;
@@ -419,6 +418,21 @@ export const ContactLink = styled.a`
     transform: translateY(-2px);
     box-shadow: 0 6px 16px ${primary}30;
   }
+`;
+
+export const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+`;
+
+export const ContactInfoItem = styled.p`
+  font-size: ${(p) => (p.muted ? "0.88rem" : "0.95rem")};
+  color: ${(p) => (p.muted ? "#888" : dark)};
+  margin: 0;
+  line-height: 1.5;
 `;
 
 // ── MODAL ─────────────────────────────────────────────────────────────
