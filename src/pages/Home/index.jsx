@@ -10,10 +10,10 @@ import {
 } from "./styles";
 
 import HeroSection from "./components/HeroSection";
-import ResearchSection from "./components/ResearchSection";
 import HighlightsSection from "./components/HighlightsSection";
+import ResearchSection from "./components/ResearchSection";
 import PublicationsSection from "./components/PublicationsSection";
-import AcademicLinksSection from "./components/AcademicLinksSection";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   const [selected, setSelected] = useState(null);
@@ -23,12 +23,11 @@ export default function Home() {
   return (
     <Container>
       <HeroSection />
-      <ResearchSection />
       <HighlightsSection setSelected={setSelected} />
+      <ResearchSection />
       <PublicationsSection />
-      <AcademicLinksSection />
+      <ContactSection />
 
-      {/* Modal de Destaques */}
       {selected && (
         <ModalOverlay onClick={closeModal}>
           <ModalBox onClick={(e) => e.stopPropagation()}>

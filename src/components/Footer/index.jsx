@@ -1,12 +1,10 @@
-import { Container, Links } from "./styles";
+import { Container } from "./styles";
 
 export default function Footer() {
   return (
     <Container>
-      <p>
-        © {new Date().getFullYear()} — Jefferson Abrantes. Todos os direitos
-        reservados.
-      </p>
+      <p>© {new Date().getFullYear()} — Jefferson Abrantes dos Santos</p>
+      <span>Professor Associado III · UFCG · CNPq 1D</span>
     </Container>
   );
 }

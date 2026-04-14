@@ -1,18 +1,27 @@
 import styled from "styled-components";
-
-import { primary, dark, text } from "../../layouts/Theme";
+import { dark, secondary, textLight } from "../../layouts/Theme";
 
 export const Container = styled.footer`
   width: 100%;
-  padding: 1.5rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, ${primary}, ${dark});
+  padding: 2rem 2.5rem;
+  background: ${dark};
+  border-top: 3px solid ${secondary};
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+
   p {
-    color: ${text};
+    color: ${textLight};
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  span {
+    font-size: 0.78rem;
+    color: ${secondary};
+    opacity: 0.75;
+    letter-spacing: 0.4px;
+  }
 `;

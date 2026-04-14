@@ -6,7 +6,10 @@ import {
   Bio,
   BioEn,
   Button,
+  ButtonOutline,
   Content,
+  Divider,
+  Buttons,
 } from "../styles";
 import photo from "../../../assets/images/jefferson.png";
 
@@ -16,26 +19,25 @@ export default function HeroSection() {
       <Photo src={photo} alt="Jefferson Abrantes dos Santos" />
       <Info>
         <Name>Jefferson Abrantes dos Santos</Name>
-        <Title>Professor Associado III — UFCG</Title>
+        <Title>Professor Associado III — UFCG · Pesquisador CNPq 1D</Title>
+        <Divider />
         <Bio>
-          Sou Professor Associado III da Universidade Federal de Campina Grande
+          Professor Associado III da Universidade Federal de Campina Grande
           (UFCG) e pesquisador nível 1D do CNPq. Atuo em Análise, com foco em
           problemas com fronteira livre, equações quase-lineares, espaços de
           Orlicz–Sobolev e métodos variacionais. Minha pesquisa concentra-se em
           questões estruturais e qualitativas envolvendo equações diferenciais
-          parciais não lineares, buscando contribuir para o desenvolvimento
-          teórico da área e para o avanço de suas aplicações.
+          parciais não lineares.
         </Bio>
         <BioEn>
-          I am an Associate Professor at the Federal University of Campina
-          Grande (UFCG) and a Level 1D Research Fellow of CNPq. My work focuses
-          on Analysis, with emphasis on free boundary problems, quasilinear
-          equations, Orlicz–Sobolev spaces, and variational methods. My research
-          investigates structural and qualitative properties of nonlinear
-          partial differential equations, aiming to advance the theoretical
-          foundations of the field and contribute to its broader applications.
+          Associate Professor at UFCG and Level 1D CNPq Research Fellow. My work
+          focuses on Analysis, with emphasis on free boundary problems,
+          quasilinear equations, Orlicz–Sobolev spaces, and variational methods.
         </BioEn>
-        <Button to="/about">Saiba mais</Button>
+        <Buttons>
+          <Button to="/about">Sobre mim</Button>
+          <ButtonOutline to="/publications">Publicações</ButtonOutline>
+        </Buttons>
       </Info>
     </Content>
   );

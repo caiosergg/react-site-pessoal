@@ -1,23 +1,30 @@
-import { Section, SectionTitle, Stats, StatCard } from "../styles";
+import {
+  Section,
+  SectionLabel,
+  SectionTitle,
+  SectionRule,
+  SectionInner,
+  Stats,
+  StatCard,
+} from "../styles";
 import highlights from "../../../data/highlights.json";
 
 export default function HighlightsSection({ setSelected }) {
-  const openModal = (highlight) => setSelected(highlight);
-
   return (
     <Section>
-      <SectionTitle>Destaques Acadêmicos</SectionTitle>
-
-      <Stats>
-        {highlights.map((h, i) => (
-          <StatCard key={i} onClick={() => openModal(h)}>
-            <div className="stat-content">
+      <SectionInner>
+        <SectionLabel>Números</SectionLabel>
+        <SectionTitle>Destaques Acadêmicos</SectionTitle>
+        <SectionRule />
+        <Stats>
+          {highlights.map((h, i) => (
+            <StatCard key={i} onClick={() => setSelected(h)}>
               <div className="stat-value">{h.value}</div>
               <div className="stat-label">{h.label}</div>
-            </div>
-          </StatCard>
-        ))}
-      </Stats>
+            </StatCard>
+          ))}
+        </Stats>
+      </SectionInner>
     </Section>
   );
 }
