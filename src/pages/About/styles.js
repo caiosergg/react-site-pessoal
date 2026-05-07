@@ -93,3 +93,44 @@ export const CardLabel = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.5px;
 `;
+
+export const Timeline = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 0.5rem;
+`;
+
+export const TimelineItem = styled.div`
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+`;
+
+export const TimelineYear = styled.span`
+  font-family: "Lora", Georgia, serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: ${secondary};
+  min-width: 82px;
+  padding-top: 3px;
+  flex-shrink: 0;
+`;
+
+export const TimelineText = styled.div`
+  font-size: 0.95rem;
+  color: ${dark};
+  line-height: 1.55;
+
+  strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+  }
+
+  span {
+    display: block;
+    color: ${textLight};
+    font-size: 0.87rem;
+  }
+`;
