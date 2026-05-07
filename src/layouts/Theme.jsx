@@ -1,8 +1,8 @@
-export const primary = "#2B2D35";
-export const secondary = "#7A6040";
-export const tertiary = "#F0EDEA";
-export const dark = "#18191F";
-export const text = "#FFFFFF";
-export const textLight = "#B8B5AE";
-export const background = "#FAFAF8";
-export const accent = "#52401F";
+export const primary    = "#1a3a5c"; // navy — cor principal
+export const secondary  = "#c9963a"; // gold — acentos decorativos
+export const tertiary   = "#eef2f7"; // azul-cinza claro — fundo alternado
+export const dark       = "#0d1b2a"; // navy profundo — títulos / footer
+export const text       = "#1c2b3a"; // texto de corpo
+export const textLight  = "#5a7080"; // texto secundário / muted
+export const background = "#f8f9fb"; // off-white — fundo principal
+export const accent     = "#2a6bac"; // azul vivo — links / hover

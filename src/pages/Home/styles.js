@@ -16,70 +16,98 @@ export const Container = styled.div`
 
 // ── HERO ────────────────────────────────────────────────────────────
 export const Content = styled.div`
-  background: ${dark};
   min-height: 88vh;
   display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background: linear-gradient(160deg, ${dark} 0%, ${primary} 100%);
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+`;
+
+export const LeftPanel = styled.div`
+  width: 38%;
+  flex-shrink: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
-  padding: 5rem 8rem;
+  gap: 1.75rem;
+  padding: 4rem 3rem;
   position: relative;
-  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(
-        ellipse 60% 55% at 75% 50%,
-        rgba(42, 107, 172, 0.08) 0%,
-        transparent 70%
-      ),
-      radial-gradient(
-        ellipse 40% 40% at 20% 80%,
-        rgba(122, 96, 64, 0.06) 0%,
-        transparent 60%
-      );
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(201, 150, 58, 0.07) 0%,
+      transparent 70%
+    );
     pointer-events: none;
   }
 
   @media (max-width: 900px) {
-    flex-direction: column;
-    text-align: center;
-    padding: 3rem 1.5rem;
-    gap: 2.5rem;
+    width: 100%;
+    padding: 3rem 2rem 2.5rem;
   }
+`;
+
+export const RightPanel = styled.div`
+  flex: 1;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 5rem 4rem 4.5rem;
+
+  @media (max-width: 900px) {
+    padding: 2.5rem 1.5rem 3rem;
+    align-items: center;
+    text-align: center;
+  }
+`;
+
+export const PanelBadge = styled.div`
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: ${secondary};
+  text-align: center;
+  opacity: 0.85;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Photo = styled.img`
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid ${secondary};
-  /* corrigido: era rgba(201,150,58,...) hardcoded */
   box-shadow:
-    0 0 0 8px ${secondary}20,
-    0 16px 40px rgba(0, 0, 0, 0.35);
+    0 0 0 10px rgba(201, 150, 58, 0.12),
+    0 20px 50px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 900px) {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
   }
-`;
-
-export const Info = styled.div`
-  flex: 1;
-  max-width: 580px;
 `;
 
 export const Name = styled.h1`
   font-family: "Lora", Georgia, serif;
   font-size: 2.6rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: -0.5px;
   line-height: 1.15;
 
@@ -89,10 +117,11 @@ export const Name = styled.h1`
 `;
 
 export const Title = styled.p`
-  font-size: 0.88rem;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 600;
   margin-top: 0.5rem;
-  color: ${secondary};
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.65);
   letter-spacing: 0.4px;
   text-transform: uppercase;
 `;
@@ -105,11 +134,12 @@ export const Divider = styled.div`
 
   @media (max-width: 900px) {
     margin: 1rem auto;
+    align-self: center;
   }
 `;
 
 export const Bio = styled.p`
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.78;
   font-size: 1rem;
   margin-bottom: 0;
@@ -117,8 +147,7 @@ export const Bio = styled.p`
 
 export const BioEn = styled.p`
   margin-top: 0.75rem;
-  color: ${textLight};
-  opacity: 0.65;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
   line-height: 1.7;
   font-style: italic;
@@ -138,7 +167,7 @@ export const Buttons = styled.div`
 
 export const Button = styled(Link)`
   background: ${secondary};
-  color: ${dark};
+  color: #fff;
   padding: 0.75rem 1.6rem;
   border-radius: 5px;
   font-weight: 700;
@@ -148,17 +177,16 @@ export const Button = styled(Link)`
   display: inline-block;
 
   &:hover {
-    /* corrigido: era #e0aa44 hardcoded */
-    background: ${accent};
+    background: #e0aa4a;
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px ${secondary}40;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
   }
 `;
 
 export const ButtonOutline = styled(Link)`
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
   padding: 0.75rem 1.6rem;
   border-radius: 5px;
   font-weight: 600;
@@ -167,8 +195,9 @@ export const ButtonOutline = styled(Link)`
   display: inline-block;
 
   &:hover {
-    border-color: ${secondary};
-    color: ${secondary};
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+    color: #fff;
     transform: translateY(-2px);
   }
 `;
@@ -227,7 +256,7 @@ export const ResearchList = styled.ul`
 
 export const ResearchItem = styled.li`
   padding: 0.7rem 1.3rem;
-  border: 1.5px solid ${secondary}50;
+  border: 1.5px solid rgba(201, 150, 58, 0.3);
   background: #fff;
   border-radius: 6px;
   color: ${dark};
@@ -238,10 +267,9 @@ export const ResearchItem = styled.li`
 
   &:hover {
     border-color: ${secondary};
-    /* corrigido: era rgba(201,150,58,0.15) hardcoded */
-    background: ${secondary}0D;
+    background: rgba(201, 150, 58, 0.06);
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px ${secondary}25;
+    box-shadow: 0 6px 14px rgba(201, 150, 58, 0.15);
   }
 `;
 
@@ -264,7 +292,7 @@ export const StatCard = styled.div`
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
     border-top-color: ${primary};
   }
 
@@ -280,7 +308,7 @@ export const StatCard = styled.div`
     font-size: 0.88rem;
     font-weight: 600;
     color: ${dark};
-    opacity: 0.75;
+    opacity: 0.7;
     margin-top: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -307,7 +335,7 @@ export const PubItem = styled.div`
   &:hover {
     border-left-color: ${primary};
     transform: translateX(4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
   }
 
   strong {
@@ -327,7 +355,7 @@ export const PubItem = styled.div`
 
   .year {
     font-size: 0.82rem;
-    color: #888;
+    color: ${textLight};
     margin-left: 0.5rem;
     font-weight: 400;
   }
@@ -343,7 +371,7 @@ export const ViewAllLink = styled(Link)`
   letter-spacing: 0.3px;
 
   &:hover {
-    color: ${secondary};
+    color: ${accent};
   }
 `;
 
@@ -359,7 +387,7 @@ export const PubFilters = styled.div`
 export const PubFilterBtn = styled.button`
   padding: 0.4rem 1.1rem;
   border-radius: 99px;
-  border: 1.5px solid ${(p) => (p.$active ? primary : secondary + "60")};
+  border: 1.5px solid ${(p) => (p.$active ? primary : "rgba(26, 58, 92, 0.25)")};
   background: ${(p) => (p.$active ? primary : "transparent")};
   color: ${(p) => (p.$active ? "#fff" : dark)};
   font-size: 0.82rem;
@@ -375,6 +403,7 @@ export const PubFilterBtn = styled.button`
     transform: none;
   }
 `;
+
 // ── CONTACT ───────────────────────────────────────────────────────────
 export const ContactWrapper = styled.div`
   display: flex;
@@ -416,7 +445,7 @@ export const ContactLink = styled.a`
     background: ${primary};
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px ${primary}30;
+    box-shadow: 0 6px 16px rgba(26, 58, 92, 0.2);
   }
 `;
 
@@ -430,7 +459,7 @@ export const ContactInfo = styled.div`
 
 export const ContactInfoItem = styled.p`
   font-size: ${(p) => (p.muted ? "0.88rem" : "0.95rem")};
-  color: ${(p) => (p.muted ? "#888" : dark)};
+  color: ${(p) => (p.muted ? textLight : dark)};
   margin: 0;
   line-height: 1.5;
 `;
@@ -439,8 +468,7 @@ export const ContactInfoItem = styled.p`
 export const ModalOverlay = styled.div`
   position: fixed;
   inset: 0;
-  /* corrigido: usa dark do tema em vez de rgba hardcoded */
-  background: ${dark}B8;
+  background: rgba(13, 27, 42, 0.72);
   backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
@@ -455,7 +483,7 @@ export const ModalBox = styled.div`
   width: 92%;
   padding: 2.5rem;
   position: relative;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 24px 64px rgba(13, 27, 42, 0.2);
   border-top: 5px solid ${secondary};
 `;
 
@@ -477,7 +505,7 @@ export const CloseBtn = styled.button`
   justify-content: center;
 
   &:hover {
-    background: ${secondary};
+    background: ${primary};
     color: #fff;
     transform: none;
   }
@@ -503,7 +531,7 @@ export const DetailsList = styled.ul`
 export const DetailItem = styled.li`
   background: ${tertiary};
   padding: 0.85rem 1.1rem;
-  border-radius: 0;
+  border-radius: 4px;
   color: ${dark};
   font-size: 0.94rem;
   border-left: 3px solid ${secondary};
@@ -511,6 +539,6 @@ export const DetailItem = styled.li`
 
   &:hover {
     transform: translateX(3px);
-    background: ${secondary}18;
+    background: rgba(201, 150, 58, 0.08);
   }
 `;

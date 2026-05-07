@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { dark, secondary, tertiary, primary } from "../../layouts/Theme";
+import { dark, secondary, tertiary, primary, text, textLight } from "../../layouts/Theme";
 
 export const Container = styled.div`
   width: 100%;
@@ -29,7 +29,7 @@ export const Divider = styled.div`
 
 export const PageSubtitle = styled.p`
   font-size: 1.05rem;
-  color: #5a7080;
+  color: ${textLight};
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
@@ -39,7 +39,7 @@ export const Section = styled.div`
   margin-bottom: 3rem;
 
   p {
-    color: #3a4a5a;
+    color: ${text};
     line-height: 1.8;
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -53,7 +53,7 @@ export const SectionTitle = styled.h2`
   color: ${dark};
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid ${secondary}40;
+  border-bottom: 2px solid rgba(201, 150, 58, 0.3);
 `;
 
 export const Grid = styled.div`
@@ -69,6 +69,12 @@ export const Card = styled.div`
   padding: 1.75rem 1.25rem;
   text-align: center;
   border-top: 4px solid ${secondary};
+  transition: all 0.22s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
 `;
 
 export const CardValue = styled.div`

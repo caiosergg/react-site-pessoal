@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as RouterLink } from "react-router-dom";
-import { secondary, dark, textLight } from "../../layouts/Theme";
+import { primary, secondary, dark, textLight } from "../../layouts/Theme";
 
 export const Container = styled.header`
   width: 100%;
@@ -9,12 +9,12 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: ${dark};
-  border-bottom: 3px solid ${secondary};
+  background: #ffffff;
+  border-bottom: 1px solid rgba(26, 58, 92, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 16px rgba(13, 27, 42, 0.06);
 `;
 
 export const LogoBox = styled.div`
@@ -25,7 +25,7 @@ export const LogoBox = styled.div`
 
 export const LogoTitle = styled.span`
   font-family: "Lora", Georgia, serif;
-  color: #fff;
+  color: ${dark};
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -36,7 +36,6 @@ export const LogoSubtitle = styled.span`
   color: ${textLight};
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  opacity: 0.85;
 `;
 
 export const Nav = styled.nav`
@@ -51,22 +50,23 @@ export const Nav = styled.nav`
 export const NavLink = styled(RouterLink)`
   color: ${textLight};
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
   padding: 0.45rem 1rem;
   border-radius: 4px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: all 0.2s;
+  border-bottom: 2px solid transparent;
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.08);
+    color: ${primary};
+    background: rgba(26, 58, 92, 0.06);
   }
 
   &.active {
-    color: ${secondary};
-    border-bottom: 2px solid ${secondary};
+    color: ${primary};
+    border-bottom-color: ${secondary};
   }
 `;
 
@@ -79,7 +79,7 @@ export const MenuHamburger = styled.div`
   span {
     width: 24px;
     height: 2px;
-    background-color: #fff;
+    background-color: ${dark};
     border-radius: 2px;
     transition: 0.3s;
   }
@@ -94,19 +94,21 @@ export const MobileMenu = styled.nav`
   top: 100%;
   right: 0;
   width: 200px;
-  background: ${dark};
-  border-left: 3px solid ${secondary};
+  background: #ffffff;
+  border-top: 3px solid ${primary};
+  border-left: 1px solid rgba(26, 58, 92, 0.1);
+  border-bottom: 1px solid rgba(26, 58, 92, 0.1);
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  gap: 0.5rem;
-  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  gap: 0.25rem;
+  box-shadow: 0 8px 24px rgba(13, 27, 42, 0.12);
 
   ${NavLink} {
     color: ${textLight};
     &:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.07);
+      color: ${primary};
+      background: rgba(26, 58, 92, 0.06);
     }
   }
 `;

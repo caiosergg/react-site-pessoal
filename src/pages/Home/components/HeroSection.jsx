@@ -1,6 +1,5 @@
 import {
   Photo,
-  Info,
   Name,
   Title,
   Bio,
@@ -10,14 +9,20 @@ import {
   Content,
   Divider,
   Buttons,
+  LeftPanel,
+  RightPanel,
+  PanelBadge,
 } from "../styles";
 import photo from "../../../assets/images/jefferson.png";
 
 export default function HeroSection() {
   return (
     <Content>
-      <Photo src={photo} alt="Jefferson Abrantes dos Santos" />
-      <Info>
+      <LeftPanel>
+        <Photo src={photo} alt="Jefferson Abrantes dos Santos" />
+        <PanelBadge>UFCG · Pesquisador CNPq 1D</PanelBadge>
+      </LeftPanel>
+      <RightPanel>
         <Name>Jefferson Abrantes dos Santos</Name>
         <Title>Professor Associado III — UFCG · Pesquisador CNPq 1D</Title>
         <Divider />
@@ -39,7 +44,7 @@ export default function HeroSection() {
           <Button to="/about">Sobre mim</Button>
           <ButtonOutline to="/publications">Publicações</ButtonOutline>
         </Buttons>
-      </Info>
+      </RightPanel>
     </Content>
   );
 }

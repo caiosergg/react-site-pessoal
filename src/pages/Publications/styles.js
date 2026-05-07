@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { dark, secondary, primary } from "../../layouts/Theme";
+import { dark, secondary, primary, textLight } from "../../layouts/Theme";
 
 export const Container = styled.div`
   max-width: 860px;
@@ -8,6 +8,7 @@ export const Container = styled.div`
 `;
 
 export const PageHeader = styled.div`
+  text-align: center;
   margin-bottom: 3rem;
 `;
 
@@ -22,7 +23,7 @@ export const Divider = styled.div`
   width: 48px;
   height: 3px;
   background: ${secondary};
-  margin-top: 1rem;
+  margin: 1rem auto 0;
 `;
 
 export const PubList = styled.div`
@@ -45,7 +46,7 @@ export const PubCard = styled.div`
   &:hover {
     border-left-color: ${primary};
     transform: translateX(4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
   }
 `;
 
@@ -68,7 +69,7 @@ export const PubTitle = styled.p`
 
 export const PubMeta = styled.p`
   font-size: 0.85rem;
-  color: #5a7080;
+  color: ${textLight};
   margin-bottom: 0;
   font-style: italic;
 `;

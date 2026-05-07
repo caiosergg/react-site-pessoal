@@ -15,6 +15,7 @@ export const Container = styled.footer`
   p {
     color: ${textLight};
     font-size: 0.85rem;
+    margin: 0;
     opacity: 0.8;
   }
 
